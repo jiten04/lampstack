@@ -1,9 +1,9 @@
 #!bin/bash
 sudo apt-get -y update && sudo apt-get -y upgrade
 sudo apt-get install -y apache2
- sudo cat > /etc/apache2/apache2.conf <<- "EOF"
- servername  35.178.116.39
- EOF
+sudo cat > /etc/apache2/apache2.conf <<- "EOF"
+servername  35.178.116.39
+EOF
 
 sudo apache2ctl configtest
 sudo systemctl restart apache2
