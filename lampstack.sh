@@ -27,6 +27,7 @@ sudo systemctl restart apache2
 sudo apt-get -y install php-cli
 
 sudo apt-get -y update
+sudo su -
 sudo cat > /var/www/html/info.php <<- "EOF"
 <?php
 phpinfo();
